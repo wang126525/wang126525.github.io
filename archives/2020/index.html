@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>归档: 2020 | NB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="NB">
+<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+<meta property="og:site_name" content="NB">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="WT">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+<link rel="stylesheet" href="/css/main.css">
+ 
+<link rel="stylesheet" href="/css/viewer.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container" :class="{show:isCtnShow}" @click="hideSlider">
+    <div class="left-col" >
+      <div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" @mouseover="linkMouseover('home')" class="profilepic">
+			<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1588860925858&amp;di=0722054bf3a97e93e0152e795d946204&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.ttpaihang.com%2Fimage%2Fvote%2F20140428095425116203.jpg" class="js-avatar">
+		</a>
+		<hgroup>
+		  <h1 class="header-author"><a href="/" @mouseover="linkMouseover('home')">WT</a></h1>
+		</hgroup>
+		
+
+		<nav class="header-menu">
+			<ul>
+				
+				<li><a href="/" target="_self">主页</a></li>
+	    	
+				<li><a href="/photo/" target="_self">照片墙</a></li>
+	    	
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+			
+				<a @click="openSlider($event, 'innerArchive')" @mouseover="linkMouseover('innerArchive')" href="javascript:void(0)">所有文章</a>
+				
+				<a @click="openSlider($event, 'aboutme')" @mouseover="linkMouseover('aboutme')" href="javascript:void(0)">关于我</a>
+				
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank"  href="/" 
+							@mouseover="linkMouseover('github')" title="">
+						<i class="icon icon-github"></i>
+					</a>
+		    
+					<a class="weibo" target="_blank"  href="/" 
+							@mouseover="linkMouseover('weibo')" title="">
+						<i class="icon icon-weibo"></i>
+					</a>
+		    
+					<a class="rss" target="_blank"  href="/" 
+							@mouseover="linkMouseover('rss')" title="">
+						<i class="icon icon-rss"></i>
+					</a>
+		    
+			</div>
+		</nav>
+	</header>		
+</div>
+
+      <!-- <div class="waifu" @mouseover="waifu.showTools=true" @mouseout="waifu.showTools=false">
+  <div class="waifu-tips" v-text="waifu.tip" v-bind:style="{opacity: waifu.tipOpacity}"></div>
+  <div>
+    <canvas id="live2d" width="520" height="480" @mouseover="linkMouseover('waifu')" style="width: 260px;height: 240px;"></canvas>
+  </div>
+  <div class="waifu-tool" v-show="waifu.showTools">
+    <span class="icon icon-search" @mouseover="linkMouseover('tools.search')" @click="toolsClick('tools.search')"></span>
+    <span class="icon icon-eye" @mouseover="linkMouseover('tools.eye')" @click="toolsClick('tools.eye')"></span>
+    <span class="icon icon-comment-o" @mouseover="linkMouseover('tools.chart')" @click="toolsClick('tools.chart')"></span>
+    <span class="icon icon-camera" @mouseover="linkMouseover('tools.photo')" @click="toolsClick('tools.photo')"></span>
+    <span class="icon icon-info-circle" @mouseover="linkMouseover('tools.info')" @click="toolsClick('tools.info')"></span>
+    <span class="icon icon-close" @mouseover="linkMouseover('tools.close')" @click="toolsClick('tools.close')"></span>
+  </div>
+</div> -->
+    </div>
+    <div class="btnctn js-mobile-btnctn">
+      <div class="slider-trigger" @click="openSlider($event, 'innerArchive', true)">
+        <i class="icon icon-list"></i>
+      </div>
+      <div class="slider-trigger" @click="toolsClick('tools.eye')">
+        <i class="icon icon-eye"></i>
+      </div>
+    </div>
+    <div class="mid-col" :class="{show: isShow,hide: isShow!==undefined && !isShow}">
+      <a name="top"></a>
+      <nav id="mobile-nav">
+  <div class="overlay js-overlay" ></div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1588860925858&amp;di=0722054bf3a97e93e0152e795d946204&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.ttpaihang.com%2Fimage%2Fvote%2F20140428095425116203.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author js-header-author">WT</h1>
+			</hgroup>
+			
+			
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/" 
+								title="">
+							<i class="icon icon-"></i>
+						</a>
+			    
+						<a class="weibo" target="_blank" href="/" 
+								title="">
+							<i class="icon icon-"></i>
+						</a>
+			    
+						<a class="rss" target="_blank" href="/" 
+								title="">
+							<i class="icon icon-"></i>
+						</a>
+			    
+				</div>
+			</nav>
+
+			<nav class="header-menu js-header-menu">
+				<ul style="width: 50%">
+				
+				
+					<li style="width: 50%"><a href="/">主页</a></li>
+		      
+					<li style="width: 50%"><a href="/photo/">照片墙</a></li>
+		      
+				</ul>
+			</nav>
+		</header>				
+	</div>
+	<div class="mobile-mask" style="display:none" v-show="isShow"></div>
+</nav>
+
+      <div id="wrapper" class="body-wrap" v-pre>
+        <div class="menu-l">
+          <div id="js-content" class="content-ll">
+            
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/archives/2020/05" class="archive-article-date">
+  	<time datetime="2020-05-07T07:31:09.147Z" itemprop="datePublished"><i class="icon icon-calendar"></i>2020-05-07</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/05/07/hello-world/">Hello World</a>
+    </h1>
+  
+
+        <div class="article-info">
+          
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  </div></section>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2020 WT
+    	</div>
+			
+			<div class="footer-right">
+				Power By <a href="http://hexo.io/" target="_blank">Hexo</a>
+			</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <div class="mask js-mask" ref="mask"></div>
+    <div class="page-modal" id="search-panel" ref="fullTextSearch" >
+  <div class="search-container">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <div class="search">
+      <div class="search-input-icon">
+        <i class="icon icon-search"></i>
+      </div>
+      <div class="search-input" >
+        <input placeholder="搜索所有文章" type="text" v-model="fullTextSearchWords" >
+      </div>
+    </div>
+    <div class="search-result">
+      <div class="search-result-item" v-for="(item,index) in fullTextSearchItems" :key="index">
+        <a v-text="item.title" :href="themeConfig.root + item.path.join('/')"></a>
+        <div v-html="item.content"></div>
+      </div>
+      <div class="more-item tip" v-show="fullTextSearch.hasMore"  @click="loadSearchResult">
+        <i class="icon icon-chevron-up"></i>
+      </div>
+      <div class="tip" v-show="fullTextSearch.isLoading || fullTextSearch.tip" 
+        v-text="fullTextSearch.tip || '正在搜索...'"></div>
+    </div>
+  </div>
+</div>
+    
+<div class="tools-col" :class="{show:isShow,hide:!isShow}" @click="stop">
+  <div class="tools-nav header-menu">
+    <ul style="width:70%">
+    
+      <li style="width: 50%" @click="openSlider($event, 'innerArchive')"><a href="javascript:void(0)" :class="{active:innerArchive}">所有文章</a></li>
+      
+      <li style="width: 50%" @click="openSlider($event, 'aboutme')"><a href="javascript:void(0)" :class="{active:aboutme}">关于我</a></li>
+      
+    </ul>
+  </div>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all" v-show="innerArchive">
+        <div class="search-wrap" >
+          <span :class="'search-item'" v-for="(searchItem,index) in searchItems" :key="index">
+            <i class="icon icon-book" v-if="searchItem.type === 'category'"></i>
+            <i class="icon icon-tag" v-if="searchItem.type === 'tag'"></i>
+            <i class="icon icon-calendar" v-if="searchItem.type === 'date'"></i>
+            {{searchItem.query}}
+            <i class="icon icon-close" @click="searchItems.splice(index,1)"></i>
+          </span>
+          <input class="search-ipt" v-model="search" @blur="addSearchItem(search)" @keydown="searchKeydown" type="text" placeholder="搜索…">
+          <i class="icon icon-search" @click="addSearchItem(search)"></i>
+        </div>
+        <div class="widget tagcloud search-tag">
+          <div>
+            <span >标签:</span>
+            <label class="bui-switch-label bui-switch-animbg">
+              <input type="checkbox" @click="showTags=!showTags"/>
+              <i class="bui-switch"></i>
+            </label>
+            <span style="margin-left: 50px;">分类:</span>
+            <label class="bui-switch-label bui-switch-animbg">
+              <input type="checkbox" @click="showCategories=!showCategories"/>
+              <i class="bui-switch"></i>
+            </label>
+          </div>
+          <ul class="article-tag-list" v-show="showTags">
+            
+            <div class="clearfix"></div>
+          </ul>
+          <ul class="article-tag-list" v-show="showCategories">
+            
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="search-ul">
+          <li class="search-li" v-for="(item,index) in items" :key="index" v-show="!item.isHide">
+            <a :href="item.path|urlformat" class="search-title"><i class="icon icon-quote-left"></i>
+              <span v-text="item.title"></span>
+            </a>
+            <p class="search-time" v-if="item.date">
+              <i class="icon icon-calendar"></i>
+              <span v-text="item.date" @click="addSearchItem(item.date.substr(0,7),'date')"></span>
+            </p>
+            <p class="search-category" v-if="item.categories.length">
+              <i class="icon icon-book" ></i>
+              <span v-for="(category,index) in item.categories" :key="index" @click="addSearchItem(category.name, 'category')" v-text="category.name"></span>
+            </p>
+            <p class="search-tag" v-if="item.tags.length">
+              <i class="icon icon-tags" ></i>
+              <span v-for="tag in item.tags" @click="addSearchItem(tag.name, 'tag')" v-text="tag.name"></span>
+            </p>
+          </li>
+        </ul>
+    	</section>
+    
+    
+    
+    	<section class="tools-section tools-section-me" v-show="aboutme">
+      
+        <div class="aboutme-wrap" id="js-aboutme">很惭愧<br><br>只做了一点微小的工作<br>谢谢大家</div>
+      
+    	</section>
+    
+  </div>
+</div>
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <div class="pswp__counter"></div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div> 
+      </div>
+
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+      </button>
+
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+      </button>
+
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <script>
+window.themeConfig = {
+  isHome: false, // 是否为首页
+  isPost: false, // 是否为文章全文页面
+  isArchive: true, // 是否为归档页面
+  isTag: false, // 是否为标签页面
+  isCategory: false, // 是否为分类页面
+  pageid: undefined, // 页面标识, 用于个性化页面开发
+  toc_hide_index: true, // 目录序号
+  comment: true, // 文章全文页面是否开启评论
+  animate: true, // 是否显示文章列表页动画效果
+  root: '/', // 资源根路径
+  baseUrl: 'http://yoursite.com',
+  pictureCdn: '' // 图片存储仓库地址
+}
+</script>
+
+<script src="/js/main.js"></script>
+ 
+<script src="/js/slider.js"></script>
+ 
+<script src="/js/mobile.js"></script>
+ 
+<script src="/js/viewer.js"></script>
+
+</body>
+</html>
