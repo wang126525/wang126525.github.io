@@ -17,12 +17,12 @@
 <meta name="twitter:card" content="summary">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico">
   
   
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/main.49f04288a147e7b3dc8e.css">
  
-<link rel="stylesheet" href="/css/viewer.css">
+<link rel="stylesheet" href="/css/viewer.c8df928fb3d369b4bac5.css">
 
 <meta name="generator" content="Hexo 4.2.0"></head>
 
@@ -32,7 +32,7 @@
       <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" @mouseover="linkMouseover('home')" class="profilepic">
-			<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1588860925858&amp;di=0722054bf3a97e93e0152e795d946204&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.ttpaihang.com%2Fimage%2Fvote%2F20140428095425116203.jpg" class="js-avatar">
+			<img src="https://cdn.colorfulsweet.site/resources/avatar.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/" @mouseover="linkMouseover('home')">WT</a></h1>
@@ -44,7 +44,7 @@
 				
 				<li><a href="/" target="_self">主页</a></li>
 	    	
-				<li><a href="/photo/" target="_self">照片墙</a></li>
+				<li><a href="/photo/" target="_self">相册</a></li>
 	    	
 			</ul>
 		</nav>
@@ -58,19 +58,24 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank"  href="/" 
-							@mouseover="linkMouseover('github')" title="">
-						<i class="icon icon-github"></i>
+					<a class="github" target="_blank"  href="/null" 
+							@mouseover="linkMouseover('github')" title="Github主页">
+						<i class="icon icon-github-alt"></i>
 					</a>
 		    
-					<a class="weibo" target="_blank"  href="/" 
-							@mouseover="linkMouseover('weibo')" title="">
+					<a class="weibo" target="_blank"  href="/null" 
+							@mouseover="linkMouseover('weibo')" title="微博">
 						<i class="icon icon-weibo"></i>
 					</a>
 		    
-					<a class="rss" target="_blank"  href="/" 
-							@mouseover="linkMouseover('rss')" title="">
+					<a class="rss" target="_blank"  href="/null" 
+							@mouseover="linkMouseover('rss')" title="Rss订阅">
 						<i class="icon icon-rss"></i>
+					</a>
+		    
+					<a class="mail" target="_blank"  href="/null" 
+							@mouseover="linkMouseover('mail')" title="邮箱">
+						<i class="icon icon-mail"></i>
 					</a>
 		    
 			</div>
@@ -108,7 +113,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1588860925858&amp;di=0722054bf3a97e93e0152e795d946204&amp;imgtype=0&amp;src=http%3A%2F%2Fwww.ttpaihang.com%2Fimage%2Fvote%2F20140428095425116203.jpg" class="js-avatar">
+				<img src="https://cdn.colorfulsweet.site/resources/avatar.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">WT</h1>
@@ -118,19 +123,24 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="/" 
-								title="">
-							<i class="icon icon-"></i>
+						<a class="github" target="_blank" href="/null" 
+								title="Github主页">
+							<i class="icon icon-github-alt"></i>
 						</a>
 			    
-						<a class="weibo" target="_blank" href="/" 
-								title="">
-							<i class="icon icon-"></i>
+						<a class="weibo" target="_blank" href="/null" 
+								title="微博">
+							<i class="icon icon-weibo"></i>
 						</a>
 			    
-						<a class="rss" target="_blank" href="/" 
-								title="">
-							<i class="icon icon-"></i>
+						<a class="rss" target="_blank" href="/null" 
+								title="Rss订阅">
+							<i class="icon icon-rss"></i>
+						</a>
+			    
+						<a class="mail" target="_blank" href="/null" 
+								title="邮箱">
+							<i class="icon icon-mail"></i>
 						</a>
 			    
 				</div>
@@ -142,7 +152,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		      
-					<li style="width: 50%"><a href="/photo/">照片墙</a></li>
+					<li style="width: 50%"><a href="/photo/">相册</a></li>
 		      
 				</ul>
 			</nav>
@@ -275,9 +285,9 @@
   <div class="tools-nav header-menu">
     <ul style="width:70%">
     
-      <li style="width: 50%" @click="openSlider($event, 'innerArchive')"><a href="javascript:void(0)" :class="{active:innerArchive}">所有文章</a></li>
+      <li style="width: 33.333333333333336%" @click="openSlider($event, 'innerArchive')"><a href="javascript:void(0)" :class="{active:innerArchive}">所有文章</a></li>
       
-      <li style="width: 50%" @click="openSlider($event, 'aboutme')"><a href="javascript:void(0)" :class="{active:aboutme}">关于我</a></li>
+      <li style="width: 33.333333333333336%" @click="openSlider($event, 'aboutme')"><a href="javascript:void(0)" :class="{active:aboutme}">关于我</a></li>
       
     </ul>
   </div>
@@ -326,11 +336,11 @@
               <i class="icon icon-calendar"></i>
               <span v-text="item.date" @click="addSearchItem(item.date.substr(0,7),'date')"></span>
             </p>
-            <p class="search-category" v-if="item.categories.length">
+            <p class="search-category" v-if="item.categories && item.categories.length">
               <i class="icon icon-book" ></i>
               <span v-for="(category,index) in item.categories" :key="index" @click="addSearchItem(category.name, 'category')" v-text="category.name"></span>
             </p>
-            <p class="search-tag" v-if="item.tags.length">
+            <p class="search-tag" v-if="item.tags && item.tags.length">
               <i class="icon icon-tags" ></i>
               <span v-for="tag in item.tags" @click="addSearchItem(tag.name, 'tag')" v-text="tag.name"></span>
             </p>
@@ -342,7 +352,7 @@
     
     	<section class="tools-section tools-section-me" v-show="aboutme">
       
-        <div class="aboutme-wrap" id="js-aboutme">很惭愧<br><br>只做了一点微小的工作<br>谢谢大家</div>
+        <div class="aboutme-wrap" id="js-aboutme">愿你最终能接纳每一面每一种的自己<br>独自活着便是团圆</div>
       
     	</section>
     
@@ -400,7 +410,7 @@ window.themeConfig = {
   isCategory: false, // 是否为分类页面
   pageid: undefined, // 页面标识, 用于个性化页面开发
   toc_hide_index: true, // 目录序号
-  comment: true, // 文章全文页面是否开启评论
+  comment: false, // 文章全文页面是否开启评论
   animate: true, // 是否显示文章列表页动画效果
   root: '/', // 资源根路径
   baseUrl: 'http://yoursite.com',
@@ -408,13 +418,13 @@ window.themeConfig = {
 }
 </script>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.e7c1d789305f9460fa9a.js"></script>
  
-<script src="/js/slider.js"></script>
+<script src="/js/slider.25a70176d6f043ed8b07.js"></script>
  
-<script src="/js/mobile.js"></script>
+<script src="/js/mobile.2a63d6fea4d60b5eea6c.js"></script>
  
-<script src="/js/viewer.js"></script>
+<script src="/js/viewer.3b441f1b584e5b444b3e.js"></script>
 
 </body>
 </html>

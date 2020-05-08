@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{535:function(n,o,i){"use strict";var t=i(227);window.AV=i(538),Promise.all([i.e(9),i.e(6)]).then(i.t.bind(null,540,7)).then((function(n){var o=n.default;t.get(window.themeConfig.root+"api/common/config/valine_config").then((function(n){var i=n.data;i.path=window.location.pathname,new o(i)}))}))}}]);
+//# sourceMappingURL=comment.6f04a90dd734c515cbba.js.map
